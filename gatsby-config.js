@@ -4,7 +4,8 @@
 module.exports = {
   siteMetadata: {
     title: `React Hooks`,
+    description: ``,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [],
-}
+};
