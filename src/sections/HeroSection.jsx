@@ -1,5 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import MockupAnimation from "../components/animations/MockupAnimation";
+import PurchaseButton from "../components/buttons/PurchaseButton";
+import { themes } from "../styles/ColorStyles";
+import { H1 } from "../styles/TextStyles";
 
 const HeroSection = () => {
   return (
@@ -14,7 +18,12 @@ const HeroSection = () => {
             Don’t skip design. Learn design and code, by building real apps with
             React and Swift. Complete courses about the best tools.
           </Description>
+          <PurchaseButton
+            title="Start learning"
+            subtitle="120+ hours of video"
+          />
         </TextWrapper>
+        <MockupAnimation />
       </ContentWrapper>
     </Wrapper>
   );
@@ -24,12 +33,15 @@ export default HeroSection;
 
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #4316db 0%, #9076e7 100%);
+  overflow: hidden;
 `;
 
 const ContentWrapper = styled.div`
   max-width: 1234px;
   margin: 0 auto;
   padding: 200px 30px;
+  display: grid;
+  grid-template-columns: 360px auto;
 `;
 
 const TextWrapper = styled.div`
@@ -38,10 +50,8 @@ const TextWrapper = styled.div`
   gap: 30px;
 `;
 
-const Title = styled.h1`
-  font-size: 60px;
-  font-weight: bold;
-  color: white;
+const Title = styled(H1)`
+  color: ${themes.dark.text1};
 `;
 
 const Description = styled.p`

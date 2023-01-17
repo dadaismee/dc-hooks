@@ -2,13 +2,15 @@ import React from "react";
 import "../index.css";
 
 import HeroSection from "../sections/HeroSection";
+import { GlobalStyle } from "../styles/GlobalStyles";
 
-const index = () => {
+const Index = () => {
   return (
     <div>
+      <GlobalStyle />
       <HeroSection />
     </div>
   );
 };
 
-export default index;
+export default Index;

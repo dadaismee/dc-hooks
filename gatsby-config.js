@@ -7,5 +7,9 @@ module.exports = {
     description: ``,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [`gatsby-plugin-netlify`],
+  plugins: [
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-image`,
+  ],
 };
