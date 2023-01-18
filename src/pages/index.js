@@ -1,16 +1,15 @@
 import React from "react";
-import "../index.css";
+import Layout from "../components/layout/Layout";
 
 import HeroSection from "../sections/HeroSection";
-import { GlobalStyle } from "../styles/GlobalStyles";
 
 const Index = () => {
   return (
-    <div>
-      <GlobalStyle />
+    <Layout>
       <HeroSection />
-    </div>
+    </Layout>
   );
 };
 
 export default Index;
+export const Head = () => <title>Design+Code</title>;
