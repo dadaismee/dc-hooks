@@ -17,6 +17,15 @@ const Wrapper = styled.div`
   position: relative;
   perspective: 5000;
 
+  @media (max-width: 760px) {
+    transform: scale(0.6);
+    transform-origin: top left;
+  }
+  @media (max-width: 745px) {
+    transform: scale(0.4);
+    transform-origin: top left;
+  }
+
   div {
     transform: rotateY(-20deg) rotateX(20deg);
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);

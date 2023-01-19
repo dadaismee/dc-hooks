@@ -4,9 +4,9 @@ import styled from "styled-components";
 
 import { Caption2, SmallText } from "../../styles/TextStyles";
 
-export default function PurchaseButton({ title, subtitle }) {
+export default function PurchaseButton({ title, subtitle, link }) {
   return (
-    <Link to="/src/pages/404.js">
+    <Link to={link}>
       <Wrapper>
         <IconWrapper>
           <Icon src="/images/icons/credit.svg" className="icon" />
